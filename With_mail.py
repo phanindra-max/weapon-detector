@@ -7,7 +7,6 @@ Created on Sun May 3 00:08:15 2021
 import os
 import cv2
 import smtplib
-#import imutils
 import argparse
 import numpy as np
 from time import sleep
@@ -31,7 +30,7 @@ s.ehlo()
 s.starttls()
 s.ehlo()
 s.login(mailfrom, gmailpass)
-sleep(5)       #to give smtp sometime to login to gmail account
+sleep(5)       #to give smtp sometime to login to your gmail account
 
 def SendMail(frameImg):
     img_data = open(frameImg, 'rb').read()
