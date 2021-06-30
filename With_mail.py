@@ -23,9 +23,9 @@ parser.add_argument('--verbose', help="To print statements", default=True)
 args = parser.parse_args()
 
 #for the mail feature
-mailfrom = "<Senders Emails>"
-gmailpass = "Senders password"
-mailto = "<Receivers Email>"
+mailfrom = "gumpulo.test.chesth@gmail.com"
+gmailpass = "AnthaNaaIshtam@123"
+mailto = "gumpulo.test.chesth@gmail.com"
 s = smtplib.SMTP('smtp.gmail.com', 587)
 s.ehlo()
 s.starttls()
@@ -40,7 +40,7 @@ def SendMail(frameImg):
     msg['From']= mailfrom
     msg['To'] = mailto
 
-    text = MIMEText("Don't mind me. Just testing a mailing script in python to send attachments - Phanindra ")
+    text = MIMEText("Alert found something suspicious from your video source. Please have a look at it.")
     msg.attach(text)
     image = MIMEImage(img_data, name=os.path.basename(frameImg))
     msg.attach(image)
@@ -110,7 +110,7 @@ def draw_labels(boxes, confs, colors, class_ids, classes, img):
 			color = colors[i]
 			cv2.rectangle(img, (x,y), (x+w, y+h), color, 2)
 			cv2.putText(img, label, (x, y - 5), font, 1, color, 1)
-	img=cv2.resize(img, (500,400))
+	img=cv2.resize(img, (640,480))
 	cv2.imshow("Image", img);return a, label, img
     
 
@@ -160,7 +160,7 @@ if __name__ == '__main__':
 			print("Opening "+image_path+" .... ")
 		image_detect(image_path)
         
-	cv2.destroyAllWindows();mailServer.quit()
+	cv2.destroyAllWindows();#mailServer.quit()
     
     
     
