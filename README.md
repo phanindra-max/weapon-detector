@@ -11,7 +11,7 @@ ________________________________________
 ## What can I do?
 
 - As my name says, I can detetect weapons(Guns, Rifiles and also Fire).
-- Currently, my developer is looking for friends who ML to collaborate and continue developing project.
+- Currently, my developer is looking for friends who know ML to collaborate and continue developing project.
 - If you're interested, please reach out to that dude.
 
 ________________________________________
