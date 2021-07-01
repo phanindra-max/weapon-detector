@@ -17,14 +17,14 @@ from email.mime.multipart import MIMEMultipart
 parser = argparse.ArgumentParser()
 parser.add_argument('--webcam', help="True/False", default=False)
 parser.add_argument('--image', help="Tue/False", default=False)
-parser.add_argument('--image_path', help="Path of image to detect objects", default="5f29df8acaff3.jpg")
+parser.add_argument('--image_path', help="Path of image to detect objects", default="use-this.jpg")
 parser.add_argument('--verbose', help="To print statements", default=True)
 args = parser.parse_args()
 
 #for the mail feature
-mailfrom = "gumpulo.test.chesth@gmail.com"
-gmailpass = "AnthaNaaIshtam@123"
-mailto = "gumpulo.test.chesth@gmail.com"
+mailfrom = "SendersEmail"
+gmailpass = "SendersPass"
+mailto = "ReciversEmail"
 s = smtplib.SMTP('smtp.gmail.com', 587)
 s.ehlo()
 s.starttls()
@@ -160,23 +160,3 @@ if __name__ == '__main__':
 		image_detect(image_path)
         
 	cv2.destroyAllWindows();#mailServer.quit()
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
