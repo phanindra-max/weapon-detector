@@ -3,7 +3,7 @@
 ## Introduction
 
 - *Name*: Danger detection with ML
-- *Created by*: Team Hack O' Holics.
+- *Repo. created by*: [Phanindra Kumar](https://www.linkedin.com/in/phanindra-kumar-kalaga/).
 - *Tools used*: Python, OpenCV, SMTPLib, YOLO V3
 
 ________________________________________
