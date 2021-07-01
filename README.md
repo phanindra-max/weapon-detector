@@ -39,6 +39,9 @@ ________________________________________
 ### Now you are ready to run the code🤘🏻😎 and will recieve email if any danger/threat detected.
 ________________________________________
 
+- Feel free to raise an isssue if you've found any.
+- For any doubts/queries, you can raise an issue too or reach out to me directly on [Twitter](https://twitter.com/Phanind52024538)
+
 ## “Any fool can write code that a computer can understand. Good programmers write code that humans can understand.” – Martin Fowler
 
 
